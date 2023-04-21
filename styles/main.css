@@ -1,6 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .header {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -15,23 +19,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header-nav {
+.header-nav, .header-social {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-}
-.header-nav a {
-
+    gap: 54px;
 }
 .header-social {
-    display: flex;
-    list-style-type: none;
-    
+    gap: 30px;
+}
+.header-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2B3541;
+    text-decoration: none;
 }
 .header-social a {
     display: block;
     width: 30px;
     height: 30px;
+    color: #2B3541;
 }
 .header-inst {
     background-image: url(../images/IN.svg);   
