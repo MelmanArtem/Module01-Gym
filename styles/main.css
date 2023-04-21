@@ -4,12 +4,16 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .header {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 27px;
 }
 .header-logo {
     display: block;
@@ -24,6 +28,7 @@ body {
     list-style-type: none;
     padding-left: 0;
     gap: 54px;
+    margin: 0;
 }
 .header-social {
     gap: 30px;
