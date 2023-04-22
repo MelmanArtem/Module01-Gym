@@ -44,6 +44,13 @@ body {
     width: 30px;
     height: 30px;
     color: #2B3541;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.header-social a:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 .header-inst {
     background-image: url(../images/IN.svg);   
@@ -64,4 +71,53 @@ body {
 }
 .container-flex {
     display: flex;
+    position: relative;
+}
+.banner-box {
+    padding-top: 228px;
+    padding-bottom: 239px;
+    color: #2B3541;
+    flex: 0 0 676px;
+}
+h1 span {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 125%;
+    display: block;
+    margin-bottom: 40px;
+}
+h1  {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.banner-description {
+    padding-left: 90px;
+}
+.banner-description p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 40px;
+    max-width: 300px;
+}
+.banner-description a {
+    color: #1E2F40;
+    background-color: #FBF138;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    line-height: 150%;
+}
+.bg {
+    width: 464px;
+    height: 850px;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.3;
 }
