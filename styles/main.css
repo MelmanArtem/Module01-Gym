@@ -1,3 +1,6 @@
+ul li {
+    list-style-type: none;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -137,4 +140,43 @@ h1  {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin-bottom: 40px;
+}
+.event {
+    margin-bottom: 160px;
+}
+.events-list {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.events-cover {
+    background-image: url(../images/maraphon@2x.png);
+    display: block;
+    width: 370px;
+    height: 600px;
+    padding: 30px;
+    background-size: cover;
+}
+.events-cover p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    list-style-type: none;
+    opacity: 0.6;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.events-cover span {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    color: #2B3541;
 }
