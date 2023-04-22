@@ -22,6 +22,11 @@ body {
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.3s;
+    transform: scale(1);
+}
+.header-logo:hover {
+    transform: scale(1.1);
 }
 .header-nav, .header-social {
     display: flex;
@@ -72,12 +77,14 @@ body {
 .container-flex {
     display: flex;
     position: relative;
+    margin-bottom: 160px;
 }
 .banner-box {
     padding-top: 228px;
     padding-bottom: 239px;
     color: #2B3541;
     flex: 0 0 676px;
+    z-index: 1;
 }
 h1 span {
     font-size: 48px;
@@ -115,9 +122,19 @@ h1  {
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     line-height: 150%;
 }
-.bg {
-    width: 464px;
-    height: 850px;
-    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
-    opacity: 0.3;
+.container-flex img { 
+    position:absolute;
+    height: 100%;
+    width: 996px;
+    right: -205px;
+}
+.banner-link {
+    background-image: url(../images/Group\ 1.svg);
+    display: block;
+    width: 52px;
+    height: 55px;
+    color: #2B3541;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
