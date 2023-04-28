@@ -308,79 +308,110 @@ h2 {
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    text-align: center;
 }
 .schedule-grid-item:first-child {
     position: relative;
     width: 367px;
-    height: 310px;
+    height: 309px;
+    opacity: 0.5;
+    border: 1px solid #2B3541;
+}
+.schedule-grid-item:first-child:hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
+.schedule-grid-item:nth-child(2) {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    position: relative;
+    width: 366px;
+    height: 402px;
     opacity: 0.5;
     border: 1px solid #2B3541;
     padding: 20px 30px;
 }
-.schedule-grid-item:nth-child(2) {
-    position: relative;
-    width: 367px;
-    height: 310px;
-    opacity: 0.5;
-    border: 1px solid #2B3541;
-    padding: 20px 30px;
+.schedule-grid-item:nth-child(2):hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .schedule-grid-item:nth-child(3) {
     position: relative;
     width: 367px;
-    height: 310px;
+    height: 309px;
     opacity: 0.5;
     border: 1px solid #2B3541;
     padding: 20px 30px;
+}
+.schedule-grid-item:nth-child(3):hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .schedule-grid-item:nth-child(4) {
+    grid-row: 2 / 4;
+    grid-column: 1;
     position: relative;
     width: 367px;
-    height: 310px;
+    height: 374px;
     opacity: 0.5;
     border: 1px solid #2B3541;
     padding: 20px 30px;
+}
+.schedule-grid-item:nth-child(4):hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .schedule-grid-item:nth-child(5) {
+    grid-row: 3 / 4;
+    grid-column: 2;
     position: relative;
-    width: 367px;
-    height: 310px;
+    width: 366px;
+    height: 281px;
     opacity: 0.5;
     border: 1px solid #2B3541;
     padding: 20px 30px;
 }
-.schedule-grid-item:nth-child(6) {
-    position: relative;
-    width: 367px;
-    height: 310px;
-    opacity: 0.5;
-    border: 1px solid #2B3541;
-    padding: 20px 30px;
-}
-.schedule-grid-item:nth-child(7) {
-    position: relative;
-    width: 367px;
-    height: 310px;
-    opacity: 0.5;
-    border: 1px solid #2B3541;
-    padding: 20px 30px;
-}
-.schedule-grid-item:nth-child(8) {
-    position: relative;
-    width: 367px;
-    height: 310px;
-    opacity: 0.5;
-    border: 1px solid #2B3541;
-    padding: 20px 30px;
+.schedule-grid-item:nth-child(5):hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .schedule-grid-item:last-child {
+    grid-row: 2 / 4;
+    grid-column: 3;
     position: relative;
     width: 367px;
-    height: 310px;
+    height: 374px;
     opacity: 0.5;
     border: 1px solid #2B3541;
     padding: 20px 30px;
+}
+.schedule-grid-item:last-child:hover {
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    opacity: 0.7;
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+}
+.schedule-grid-time {
+    position: absolute;
+    right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #010101;
+    opacity: 0.7;
+}
+.schedule-grid-item img {
+    position: absolute;
+    left: 20px;
+    bottom: 83px;
+}
+.schedule-grid-train {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
 }
