@@ -331,7 +331,6 @@ h2 {
     height: 402px;
     opacity: 0.5;
     border: 1px solid #2B3541;
-    padding: 20px 30px;
 }
 .schedule-grid-item:nth-child(2):hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
@@ -344,7 +343,6 @@ h2 {
     height: 309px;
     opacity: 0.5;
     border: 1px solid #2B3541;
-    padding: 20px 30px;
 }
 .schedule-grid-item:nth-child(3):hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
@@ -359,7 +357,6 @@ h2 {
     height: 374px;
     opacity: 0.5;
     border: 1px solid #2B3541;
-    padding: 20px 30px;
 }
 .schedule-grid-item:nth-child(4):hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
@@ -374,7 +371,6 @@ h2 {
     height: 281px;
     opacity: 0.5;
     border: 1px solid #2B3541;
-    padding: 20px 30px;
 }
 .schedule-grid-item:nth-child(5):hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
@@ -389,7 +385,6 @@ h2 {
     height: 374px;
     opacity: 0.5;
     border: 1px solid #2B3541;
-    padding: 20px 30px;
 }
 .schedule-grid-item:last-child:hover {
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
