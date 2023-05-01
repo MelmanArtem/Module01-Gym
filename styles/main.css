@@ -507,3 +507,48 @@ h2 {
 .radio:checked + label::before{
    border-radius: 100%;
 }
+.about {
+    margin-bottom: 170px;
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.about-flex img {
+    display: block;
+    max-width: 581px;
+    max-height: 336px;
+}
+.about-box h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin: 0;
+}
+.about-box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    max-width: 485px;
+    margin-bottom: 35px;
+}
+.about-list {
+    display: flex;
+    justify-content: space-between;
+}
+.about-item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    max-width: 255px;
+}
+.about-item p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    opacity: 0.6;
+    max-width: 250px;
+}
