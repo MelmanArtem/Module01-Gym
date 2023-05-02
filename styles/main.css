@@ -26,6 +26,12 @@ body {
     padding-top: 50px;
     padding-bottom: 27px;
 }
+.header p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -417,7 +423,7 @@ h2 {
     border: none;
     display: block;
     width: 100%;
-} 
+}  
 .subscribe-button {
     display: inline-block;
     border: none;
@@ -551,4 +557,19 @@ h2 {
     color: #2B3541;
     opacity: 0.6;
     max-width: 250px;
+}
+.footer {
+    height: 150px;
+    background: #F3F3F3;
+    display: block;
+}
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: #2B3541;
+    opacity: 0.3;
+}
+.footer-author {
+    color: #2B3541;
+    opacity: 0.3;
 }
