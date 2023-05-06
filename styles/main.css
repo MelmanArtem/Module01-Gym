@@ -563,13 +563,21 @@ h2 {
     background: #F3F3F3;
     display: block;
 }
+.footer-address {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+    font-style: normal;
+}
 .footer-text {
     display: flex;
     justify-content: space-between;
     color: #2B3541;
     opacity: 0.3;
+    font-size: 14px;
 }
 .footer-author {
     color: #2B3541;
-    opacity: 0.3;
+    text-decoration-line: underline;
 }
