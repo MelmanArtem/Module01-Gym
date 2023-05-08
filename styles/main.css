@@ -220,19 +220,21 @@ h2 {
     opacity: 0.6;
 }
 .events-date {
+    display: block;
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
     list-style-type: none;
     opacity: 0.6;
-    margin: 30px 0 20px 32px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .events-name {
     font-weight: 700;
     font-size: 28px;
     line-height: 125%;
     color: #2B3541;
-    margin-left: 32px;
+    margin-left: 30px;
 }
 .events-sign {
     color: #FBF138;
@@ -268,6 +270,9 @@ h2 {
     transition: 0.3s;
     opacity: 1;
 }
+.schedule {
+    margin-bottom: 160px;
+}
 .schedule-header {
     display: flex;
     align-items: center; 
@@ -280,9 +285,6 @@ h2 {
     color: #2B3541;
     margin-bottom: 40px;
     max-width: 360px;
-}
-.schedule {
-    margin-bottom: 160px;
 }
 .schedule-date {
     font-weight: 700;
