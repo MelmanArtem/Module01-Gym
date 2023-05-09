@@ -408,6 +408,9 @@ h2 {
     display: block;
     width: 100%;
 }  
+.text-input {
+    border-color: #FBF138;
+}
 .subscribe-button {
     display: inline-block;
     border: none;
@@ -455,7 +458,7 @@ h2 {
    height: 16px;
    left:0;
    top:calc(50% - 10px);
-   background-color: transparent;
+   background-color: green;
    border-radius: 2px;
    border: 2px solid #2B3541;
 }
