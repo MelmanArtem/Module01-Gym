@@ -435,6 +435,7 @@ h2 {
 }
 .agreement a {
     color: #2B3541;
+    text-decoration: underline;
 }
 .checkbox:checked,
 .checkbox:not(:checked){
@@ -469,7 +470,7 @@ h2 {
    top: calc(50% - 6px);
    background-size: cover;
    background-repeat: no-repeat;
-   background-image: url(/images/check.svg);
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
 }
 .checkbox:not(:checked) + label::before{
    content:'';
@@ -495,7 +496,7 @@ h2 {
    background-color: transparent;
    background-repeat: no-repeat;
    background-size: cover;
-   background-image: url(/images/check.svg);
+   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
 }
 .radio:checked + label::before{
    border-radius: 100%;
