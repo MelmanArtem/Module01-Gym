@@ -19,12 +19,14 @@ body {
     padding-right: 15px;
 }
 .header {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 27px;
+    z-index: 1;
 }
 .header p {
     font-weight: 700;
@@ -384,7 +386,6 @@ h2 {
 .subscribe-title::before {
     content: '';
     position: absolute;
-    display: inline-block;
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     border-radius: 50%;
@@ -530,6 +531,19 @@ h2 {
 .about-list {
     display: flex;
     justify-content: space-between;
+    gap: 5%;
+}
+.about-item:first-child {
+    flex-basis: 38%;
+}
+.about-item:nth-child(2) {
+    flex-basis: 50%;
+}
+.about-item:nth-child(3) {
+    flex-basis: 41%;
+}
+.about-item:last-child {
+    flex-basis: 35%;
 }
 .about-item h3 {
     font-weight: 700;
@@ -547,7 +561,33 @@ h2 {
 .footer {
     height: 150px;
     background: #F3F3F3;
+    position: relative;
+}
+.footer-nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 54px;
+    margin: 0;
+}
+.footer-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2B3541;
+    transition: 0.3s;
+}
+.footer-nav a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
     display: block;
+    background-color: transparent;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+.footer-nav a:hover::after {
+    background-color: #FBF138;
 }
 .footer-address {
     font-weight: 700;
@@ -555,6 +595,19 @@ h2 {
     line-height: 150%;
     color: #2B3541;
     font-style: normal;
+    cursor: pointer;
+}
+.footer-address::before {
+    content: '';
+    position: absolute;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    top: 45px;
+    right: 325px;
+    z-index: -1;
 }
 .footer-text {
     display: flex;
@@ -567,3 +620,4 @@ h2 {
     color: #2B3541;
     text-decoration-line: underline;
 }
+
