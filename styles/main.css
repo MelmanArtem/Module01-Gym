@@ -443,13 +443,19 @@ h2 {
 .agreement {
     font-size: 11px;
     color: #2B3541;
-    opacity: 0.5;
     text-align: left;
     margin-top: 15px;
 }
+.agreement a, .agreement label {
+    color: rgba(43, 53, 65, 0.5);
+    transition: 0.3s;
+}
 .agreement a {
-    color: #2B3541;
     text-decoration: underline;
+}
+.agreement a:hover {
+    color: #2B3541;
+    opacity: 1;
 }
 .checkbox:checked,
 .checkbox:not(:checked){
@@ -605,11 +611,17 @@ h2 {
     display: flex;
     justify-content: space-between;
     color: #2B3541;
-    opacity: 0.3;
     font-size: 14px;
 }
-.footer-author {
+.footer-text a, .footer-text p {
+    color: rgba(43, 53, 65, 0.5);
+    transition: 0.3s;
+}
+.footer-text a {
+    text-decoration: underline;
+}
+.footer-text a:hover {
     color: #2B3541;
-    text-decoration-line: underline;
+    opacity: 1;
 }
 
