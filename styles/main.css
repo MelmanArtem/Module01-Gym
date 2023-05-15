@@ -653,3 +653,81 @@ h2 {
 .button-up.visible {
     opacity: .9;
 }
+
+/*Modal Window*/
+.burger {
+    width: 29px;
+    height: 22px;
+    background-image: url(../images/burger-menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: #FFF8DC;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.modal .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.burger-close {
+    width: 22px;
+    height: 22px;
+    background: url(../images/close.svg);
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*Адаптация под мобильные устройства*/
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 748px;
+    }
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+    .container-flex {
+        margin-bottom: 106px;
+    }
+    .event {
+        margin-bottom: 95px;
+    }
+    .schedule {
+        margin-bottom: 90px;
+    }
+    .subscribe {
+        height: 416px;
+        margin-bottom: 95px;
+        padding: 50px 0;
+    }
+    .about {
+        margin-bottom: 95px;
+    }
+    .footer {
+        height: 280px;
+    }
+
+}
