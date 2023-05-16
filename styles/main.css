@@ -665,42 +665,46 @@ h2 {
     border: none;
     cursor: pointer;
 }
-
 .modal {
-    background-color: #FFF8DC;
-    max-width: 500px;
-    text-align: center;
+    background-color: #F3F3F3;
+    max-width: 587px;
+    text-align: left;
     position: absolute;
     top: -400px;
     left: 0;
     right: 0;
-    margin: 20px auto 0;
-    padding: 40px;
+    margin: 10px auto 0;
+    padding: 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
 .modal .header-nav {
     flex-direction: column;
-    align-items: center;
-    gap: 23px;
+    justify-content: start;
+    gap: 30px;
     margin: 0;
 }
+
 .burger-close {
-    width: 22px;
-    height: 22px;
-    background: url(../images/close.svg);
+    width: 19px;
+    height: 19px;
+    background-image: url(../images/close.svg);
     background-color: transparent;
     border: none;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 34px;
+    right: 12px;
     cursor: pointer;
 }
 
 /*Адаптация под мобильные устройства*/
-
+@media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+}
 @media (max-width: 768px) {
     .container {
         max-width: 748px;
@@ -729,5 +733,9 @@ h2 {
     .footer {
         height: 280px;
     }
-
+}
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
 }
