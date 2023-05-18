@@ -52,14 +52,14 @@
                     &gt;15 тренировок</h1>
                     <div class="banner-description">
                         <p>в области спортивной физиологии и нутрициологии</p>
-                        <a class="banner-button" href="#TrainingSchedule">узнать подробнее</a>
+                        <a class="banner-button" href="#">узнать подробнее</a>
                     </div>
                 </div>
-                <a class="banner-link" href="#"></a>
+                <a class="banner-link" href="#UpcomingEvents"></a>
                 <img src="images/Image1screen@2x.jpg" alt="gym">
             </div>
         </div>
-        <section class="event">
+        <section class="event" id="UpcomingEvents">
             <div class="container">
                 <h2>Ближайшие события</h2>
                 <ul class="events-list">
@@ -84,7 +84,7 @@
                 </ul>
             </div>
         </section>
-        <section class="schedule" id="TrainingSchedule">
+        <section class="schedule">
             <div class="container">
                 <div class="schedule-header">
                     <h2 class="schedule-title">Расписание тренировок</h2>
@@ -210,9 +210,8 @@
         <button class="burger-close" onclick="closeModal()"></button>
     </div>
     <script>
-
-        // Scroll
-        const links = document.querySelectorAll(".banner-button");
+        // Scroll №1
+         const links = document.querySelectorAll(".banner-link");
         for (const link of links) {
             link.addEventListener("click", clickHandler);
             }
@@ -252,6 +251,7 @@
         function closeModal() {
            document.getElementById("modal").style.top = "-400px";
         }
+        
     </script>
 </body>
 </html>

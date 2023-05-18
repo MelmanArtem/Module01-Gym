@@ -102,7 +102,7 @@ body {
 .container-flex {
     display: flex;
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 159px;
 }
 .container-flex img { 
     position:absolute;
@@ -115,7 +115,7 @@ body {
     padding-bottom: 239px;
     color: #2B3541;
     flex: 0 0 676px;
-    z-index: 2;
+    z-index: 1;
 }
 h1 span {
     font-size: 48px;
@@ -170,15 +170,23 @@ h1  {
     left: 0;
     bottom: 0;
     cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1);
+    z-index: 1;
+}
+.banner-link:hover {
+    transform: scale(1.1);
 }
 h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 125%;
     color: #2B3541;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 .event {
+    padding-top: 1px;
     margin-bottom: 160px;
 }
 .events-list {
@@ -312,7 +320,7 @@ h2 {
     border: 1px solid rgba(43, 53, 65, 0.5);
     border-bottom: 1px solid rgba(43, 53, 65, 0.5);
     background: transparent;
-    box-shadow: transparent;
+    box-shadow: none;
     transition: 0.5s;
 }
 .schedule-grid-item:hover {
@@ -638,13 +646,15 @@ h2 {
     border-radius: 5px;
     position: fixed;
     bottom: 60px;
-    right: 70px;
+    right: 60px;
     transition: 0.8s;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    transform: scale(1);
 }
 .button-up:hover {
     background-color: #2B3541;
     color: #FBF138;
+    transform: scale(1.1);
     box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.3);
 }
 .button-up.hidden {
@@ -658,7 +668,7 @@ h2 {
 .header-burger {
     position: absolute;
     top: 54px;
-    left: 130px;
+    left: 125px;
 }
 .modal .header-logo {
     position: absolute;
