@@ -56,15 +56,15 @@ body {
     gap: 54px;
     margin: 0;
 }
-.header-social {
-    gap: 30px;
-}
 .header-nav a,
 .footer-nav a {
     font-size: 18px;
     font-weight: 400;
     color: #2B3541;
     transition: 0.3s;
+}
+.header-social {
+    gap: 30px;
 }
 .header-social a {
     display: block;
@@ -724,17 +724,29 @@ h2 {
     z-index: 2;
 }
 .modal .header-nav {
+    display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 30px;
     margin: 0;
     padding: 92px 0 32px;
 }
-.hr-line {
-    margin: 0;
-    padding: 0;
+.modal .header-nav a {
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.4s;
+}
+.modal .header-nav a:hover {
+    font-size: 17px;
+}
+.modal .header-nav a::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #2B3541;
     opacity: 0.2;
-    border: 1px solid #2B3541;
+    width: 100%;
+    margin-top: 20px;
+    transition: 0.3s;
 }
 .burger-close {
     width: 19px;
@@ -748,6 +760,11 @@ h2 {
     top: 33px;
     right: 12px;
     cursor: pointer;
+    transition: 0.4s;
+    transform: scale(1);
+}
+.burger-close:hover {
+    transform: scale(1.2);
 }
 
 /*Адаптация под мобильные устройства*/
@@ -760,7 +777,6 @@ h2 {
     .container {
         max-width: 748px;
     }
-    
     .header-logo {
         width: 78px;
         height: 24px;
