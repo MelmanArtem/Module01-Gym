@@ -101,20 +101,29 @@ body {
 .container-flex {
     display: flex;
     position: relative;
-    margin-bottom: 159px;
+    margin-bottom: 160px;
 }
-.container-flex img { 
-    position:absolute;
-    height: 100%;
-    width: 996px;
+.img-desktop{ 
+    position: absolute;
+    max-width: 996px;
+    max-height: 852px;
     right: -205px;
+    bottom: 0;
+}
+.img-mobi {
+    display: none;
 }
 .banner-box {
     padding-top: 228px;
     padding-bottom: 239px;
     color: #2B3541;
-    flex: 0 0 676px;
-    z-index: 1;
+    flex-basis: 676px;
+}
+h1  {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 h1 span {
     font-size: 48px;
@@ -123,12 +132,6 @@ h1 span {
     line-height: 125%;
     display: block;
     margin-bottom: 40px;
-}
-h1  {
-    margin-top: 0;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
 }
 .banner-description {
     padding-left: 90px;
@@ -157,6 +160,15 @@ h1  {
     background-color: #1E2F40;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
 }
+.banner-rectangle {
+    max-height: 850px;
+    max-width: 464px;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    background-position: 0 center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.2;
+    flex-basis: calc(100% - 676px);
+}
 .banner-link {
     background-image: url(../images/Vector.png);
     background-repeat: no-repeat;
@@ -175,6 +187,10 @@ h1  {
 .banner-link:hover {
     transform: scale(1.1);
 }
+.event {
+    padding-top: 1px;
+    margin-bottom: 160px;
+}
 h2 {
     font-weight: 700;
     font-size: 40px;
@@ -182,10 +198,6 @@ h2 {
     color: #2B3541;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-.event {
-    padding-top: 1px;
-    margin-bottom: 160px;
 }
 .events-list {
     display: flex;
@@ -792,6 +804,53 @@ h2 {
     }
     .container-flex {
         margin-bottom: 106px;
+    }
+    .banner-box {
+        padding-top: 26px;
+        padding-bottom: 91px;
+        flex-basis: 359px;
+    }
+    h1 span {
+        font-size: 26px;
+    }
+    h1  {
+        font-size: 26px;
+        margin-bottom: 16px;
+        line-height: 32px;
+    }
+    .banner-description {
+        padding-left: 0;
+    }
+    .banner-description p {
+        font-size: 16px;
+        max-width: 255px;
+    }
+    .banner-button {
+        letter-spacing: 0.03em;
+    }
+    .banner-rectangle {
+        width: 442px;
+        height: 429px;  
+        flex-basis: calc(100% - 359px);
+    }
+    .img-desktop{ 
+        display: none;
+    }
+    .img-mobi {
+        display: block;
+        position: absolute;
+        width: 395px;
+        height: 340px;
+        right: 0;
+        bottom: 0;
+    }
+    .banner-link {
+        background-image: url(../images/Vector-mobi.png);
+        padding: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
     }
     .event {
         margin-bottom: 95px;
