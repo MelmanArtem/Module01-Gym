@@ -794,6 +794,66 @@ h2 {
         display: none;
     }
 }
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 1000px;
+    }
+    .header-logo {
+        width: 89px;
+        height: 27px;
+    }
+    .container-flex {
+        margin-bottom: 134px;
+    }
+    .banner-box {
+        padding-top: 125px;
+        padding-bottom: 165px;
+        flex-basis: 518px;
+    }
+    h1 span {
+        font-size: 37px;
+    }
+    h1  {
+        font-size: 33px;
+        margin-bottom: 18px;
+        line-height: 34px;
+    }
+    .banner-description {
+        padding-left: 45px;
+    }
+    .banner-description p {
+        font-size: 17px;
+        max-width: 270px;
+        line-height: 140%
+    }
+    .banner-button {
+        letter-spacing: 0.07em;
+    }
+    .banner-rectangle {
+        width: 442px;
+        height: 629px;  
+        flex-basis: calc(100% - 518px);
+    }
+    .img-desktop{ 
+        position: absolute;
+        max-width: 508px;
+        max-height: 596px;
+        right: 0;
+        bottom: 0;
+    }
+    .img-mobi {
+        display: none;
+    }
+    .banner-link {
+        background-image: url(../images/Vector.png);
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
+    } 
+}
 @media (max-width: 768px) {
     .container {
         max-width: 748px;
@@ -824,6 +884,7 @@ h2 {
     .banner-description p {
         font-size: 16px;
         max-width: 255px;
+        line-height: 130%
     }
     .banner-button {
         letter-spacing: 0.03em;
@@ -847,11 +908,8 @@ h2 {
     .banner-link {
         background-image: url(../images/Vector-mobi.png);
         padding: 16px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        cursor: pointer;
     }
+
     .event {
         margin-bottom: 95px;
     }
