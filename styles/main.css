@@ -948,8 +948,8 @@ h2 {
         letter-spacing: 0.03%;
     }
     .banner-rectangle {
-        max-width: 550px;
-        min-width: 314px;  
+        max-width: 314px;
+        min-width: 313px;  
         flex-basis: 230px;
         margin: 0 auto;
     }
