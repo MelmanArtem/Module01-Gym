@@ -795,7 +795,7 @@ h2 {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .header-logo {
         width: 89px;
         height: 27px;
@@ -903,7 +903,6 @@ h2 {
         background-image: url(../images/Vector-mobi.png);
         padding: 16px;
     }
-
     .event {
         margin-bottom: 95px;
     }
@@ -929,11 +928,11 @@ h2 {
 }
 @media (max-width: 600px) {
     .container-flex {
-        display: flex;
         flex-direction: column;
     }
     .banner-box {
         padding-bottom: 70px;
+        flex-basis: 330px;
     }
     h1 span {
         font-size: 24px;
@@ -948,10 +947,10 @@ h2 {
         letter-spacing: 0.03%;
     }
     .banner-rectangle {
-        max-width: 314px;
-        min-width: 313px;  
+        width: 100%;
+        margin-left: 0; 
+        margin-right: 0;
         flex-basis: 230px;
-        margin: 0 auto;
     }
     .img-desktop{ 
         display: none;
@@ -959,15 +958,13 @@ h2 {
     .img-mobi {
         width: 314px;
         height: 276px;
-        right: 0;
+        right: 5px;
         bottom: 0;
     }
     .banner-link {
         display: none;
     }
 }
-@media (max-width: 360px) {
-    .banner-rectangle {
-        max-width: 312px;
-    }
+@media (max-width: 375px) {
+    
 }
