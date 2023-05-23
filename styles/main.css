@@ -796,9 +796,6 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-    .container {
-        max-width: 1000px;
-    }
     .header-logo {
         width: 89px;
         height: 27px;
@@ -855,9 +852,6 @@ h2 {
     } 
 }
 @media (max-width: 768px) {
-    .container {
-        max-width: 748px;
-    }
     .header-logo {
         width: 78px;
         height: 24px;
@@ -931,5 +925,49 @@ h2 {
 @media (max-width: 765px) {
     nav {
         display: none;
+    }
+}
+@media (max-width: 600px) {
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-box {
+        padding-bottom: 70px;
+    }
+    h1 span {
+        font-size: 24px;
+    }
+    .banner-description p {
+        max-width: 460px;
+    }
+    .banner-button {
+        padding: 20px 50px;
+        display: block;
+        text-align: center;
+        letter-spacing: 0.03%;
+    }
+    .banner-rectangle {
+        max-width: 550px;
+        min-width: 314px;  
+        flex-basis: 230px;
+        margin: 0 auto;
+    }
+    .img-desktop{ 
+        display: none;
+    }
+    .img-mobi {
+        width: 314px;
+        height: 276px;
+        right: 0;
+        bottom: 0;
+    }
+    .banner-link {
+        display: none;
+    }
+}
+@media (max-width: 360px) {
+    .banner-rectangle {
+        max-width: 312px;
     }
 }
