@@ -97,6 +97,9 @@ body {
 .header-nav a:hover::after {
     background-color: #2B3541;
 }
+.footer-nav a:hover::after {
+    background-color: #FBF138;
+}
 .container-flex {
     display: flex;
     position: relative;
@@ -651,9 +654,6 @@ h2 {
     padding-bottom: 10px;
     z-index: 1;
 }
-.footer-nav a:hover::after {
-    background-color: #FBF138;
-}
 .footer-address {
     position: relative;
     font-weight: 700;
@@ -821,7 +821,11 @@ h2 {
         display: none;
     }
 }
-
+@media (max-width: 1430px) {
+    .button-up {
+        display: none;
+    }
+}
 @media (max-width: 1024px) {
     .header-logo {
         width: 89px;
@@ -943,11 +947,7 @@ h2 {
         max-width: 470px;
         max-height: 280px;
     }
-    .button-up {
-        display: none;
-    }
     .footer-nav a {
-        font-weight: 400;
         font-size: 14px;
         line-height: 150%;
     }
@@ -985,8 +985,8 @@ h2 {
         background-color: #FBF138;
         box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
         border-radius: 50%;
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
         bottom: 8px;
         right: 110px;
         z-index: -1;
@@ -1245,26 +1245,15 @@ h2 {
     .footer-navitation {
         flex-wrap: wrap;
     }
-    .footer-nav a {
-        font-size: 12px;
-    }
-    .footer-address {
+    .footer-nav a, .footer-address{
         font-size: 12px;
     }
     .footer-desk .footer-address::before {
-        content: '';
-        position: absolute;
-        background-color: #FBF138;
-        box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
-        border-radius: 50%;
-        width: 22px;
-        height: 22px;
         bottom: 8px;
         right: 96px;
         z-index: -1;
     }
     .footer-text p {
-        font-weight: 400;
         font-size: 10px;
         line-height: 150%;
     }
@@ -1405,7 +1394,6 @@ h2 {
     .footer-desk {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         margin-top: 10px;
     }
     .footer-text {
