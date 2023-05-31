@@ -309,7 +309,7 @@ h2 {
 }
 .schedule-header {
     display: flex;
-    align-items: center; 
+    align-items: baseline; 
     justify-content: space-between;
 }
 .schedule-title {
@@ -963,6 +963,15 @@ h2 {
     }
 }
 @media (max-width: 850px) {
+    .schedule-date {
+        font-size: 22px;
+        line-height: 125%;
+        opacity: 0.7;
+    }
+    .about-flex img {
+        max-width: 365px;
+        max-height: 227px;
+    }
     .footer-navitation .footer-address,
     .footer-navitation .header-social {
         display: none;
@@ -1011,7 +1020,7 @@ h2 {
     h1  {
         font-size: 26px;
         margin-bottom: 16px;
-        line-height: 32px;
+        line-height: 28px;
     }
     .banner-description {
         padding-left: 0;
@@ -1114,18 +1123,14 @@ h2 {
     .schedule {
         margin-bottom: 90px;
     }
-    .schedule-header {
-        align-items: baseline;
-    }
     .schedule-title {
         font-size: 26px;
         line-height: 32px;
-        max-width: 340px;
+        max-width: 200px;
     }
     .schedule-date {
-        font-size: 19px;
+        font-size: 16px;
         line-height: 120%;
-        opacity: 0.7;
     }
     .schedule-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1159,7 +1164,8 @@ h2 {
     .subscribe {
         height: 416px;
         margin-bottom: 95px;
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 30px;
     }
     .subscribe-flex {
         display: flex;
@@ -1218,10 +1224,6 @@ h2 {
         max-width: 310px;
         margin-bottom: 34px;
     }
-    .about-flex img {
-        max-width: 365px;
-        max-height: 227px;
-    }
     .about-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1241,6 +1243,7 @@ h2 {
     .footer-flex {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
     .footer-navitation {
         flex-wrap: wrap;
@@ -1252,6 +1255,9 @@ h2 {
         bottom: 8px;
         right: 96px;
         z-index: -1;
+    }
+    .footer-text {
+        margin-bottom: 50px;
     }
     .footer-text p {
         font-size: 10px;
@@ -1270,7 +1276,7 @@ h2 {
     }
     .banner-box {
         padding-bottom: 70px;
-        flex-basis: 330px;
+        flex-basis: 320px;
     }
     h1 span {
         font-size: 24px;
@@ -1399,18 +1405,10 @@ h2 {
     .footer-text {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 475px) {
-    .footer-navitation .header-logo,
-    .footer-navitation .footer-nav {
-        margin: 0 auto;
-    }
-    .footer-nav {
-        gap: 26px;
-    }
-}
-@media (max-width: 360px) {
     .events-cover:first-child {
         background-image: url(../images/maraphon.png); 
     }
@@ -1420,4 +1418,11 @@ h2 {
     .events-cover:last-child {
         background-image: url(../images/Vebinar2.png);
     } 
+    .footer-navitation .header-logo,
+    .footer-navitation .footer-nav {
+        margin: 0 auto;
+    }
+    .footer-nav {
+        gap: 26px;
+    }
 }
